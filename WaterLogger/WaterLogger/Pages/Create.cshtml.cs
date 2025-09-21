@@ -37,8 +37,6 @@ namespace WaterLogger.Pages
                     $"INSERT INTO drinking_water(date, quantity) VALUES('{DrinkingWater.Date}', '{DrinkingWater.Quantity}')";
 
                 tableCmd.ExecuteNonQuery();
-
-                connection.Close();
             }
 
             return RedirectToPage("./Index");
